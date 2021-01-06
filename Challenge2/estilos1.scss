@@ -1,0 +1,227 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+.main{
+
+    width: 80%;
+    margin: 0 auto;
+
+    &-header{
+
+        &-titolo{
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+    
+            h1{
+                text-align: center;
+                color: var(--Very-Dark-Magenta);
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            p{
+                text-align: center;
+                line-height: 1.5rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #7C737B;
+            }
+        
+        }
+    }
+
+        &-sezione{
+            padding: 8px;
+
+            &-rankings{
+                text-align: center;
+                padding: 5px;
+                margin-bottom: 18px;
+                border-radius: 10px;
+                background-color: var(--Light-Grayish-Magenta);
+
+                &-img{
+                    margin-top: 1rem;
+                    
+                    img{
+                        display: inline-block;
+                        margin-left: 5px;
+                    }
+
+                }
+            
+                p{
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: var(--Very-Dark-Magenta);  
+                }
+            }
+        }
+
+    &-section{
+        margin: 10px 8px;
+
+        &-contenuto{
+            background-color: var(--Very-Dark-Magenta);
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            padding: 25px;
+
+            &-header{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img{
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                h3{
+                    font-weight: 700;
+                    margin-left: 20px;
+                    line-height: 20px;
+                    color: var(--White);
+
+                    span{
+                        display: block;
+                        font-weight: 400;
+                        color: #AF5F96;
+                    }
+                }
+            }
+
+            p{
+                font-size: 1.1rem;
+                line-height: 2rem;
+                color: var(--White);
+            }
+        }
+    }
+}
+
+@media (min-width: 426px){
+    .main{
+        height: 100vh;
+        width: 90%;
+        margin: 0 auto;
+
+        &-header{
+           display: grid;
+           grid-template-columns: 1fr 1.5fr;
+           grid-template-rows: 1fr;
+           justify-content: center;
+           align-items: center;
+           margin-top: 50px;
+           margin-bottom: 50px;
+
+            &-titolo{
+                margin-top: 20px;
+
+                h1{
+                    font-size: 3rem;
+                    text-align: start;
+                }
+
+                p{
+                    text-align: start;
+                    font-size: 1rem;
+                }
+
+            }
+        }
+    
+    
+
+        &-sezione{
+            margin-left: 50px;
+            padding: 20px;
+
+            &-rankings {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 40px;
+                width: max-content;
+
+                &-img{
+                    margin: auto 0;
+                    
+                    img{
+                        height: 15px;
+                    }
+                }
+
+                p{
+                    margin-left: 10px;
+                    font-size: 1.1rem;
+                }
+            }
+
+        #primo{
+           position: relative;
+           right: 5%
+        }
+
+        #secondo{
+            position: relative;
+            left: 5%;
+
+            p{
+                margin-right: 20px;
+            }
+        }
+
+        #terzo{
+            position: relative;
+            left: 15%;
+
+             p{    
+             margin-right: 20px;
+             }
+        }
+    
+    
+        }
+
+    &-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 20px;
+        margin: 0;
+
+        &-contenuto{
+            height: auto;
+            margin-left: 10px;
+
+            p{
+                font-size: 1rem;
+            }
+
+
+        }
+
+    }
+    
+    }
+}
+

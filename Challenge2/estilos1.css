@@ -1,0 +1,221 @@
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-header-titolo {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.main-header-titolo h1 {
+  text-align: center;
+  color: var(--Very-Dark-Magenta);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.main-header-titolo p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #7C737B;
+}
+
+.main-sezione {
+  padding: 8px;
+}
+
+.main-sezione-rankings {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background-color: var(--Light-Grayish-Magenta);
+}
+
+.main-sezione-rankings-img {
+  margin-top: 1rem;
+}
+
+.main-sezione-rankings-img img {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.main-sezione-rankings p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+}
+
+.main-section {
+  margin: 10px 8px;
+}
+
+.main-section-contenuto {
+  background-color: var(--Very-Dark-Magenta);
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+
+.main-section-contenuto-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section-contenuto-header img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.main-section-contenuto-header h3 {
+  font-weight: 700;
+  margin-left: 20px;
+  line-height: 20px;
+  color: var(--White);
+}
+
+.main-section-contenuto-header h3 span {
+  display: block;
+  font-weight: 400;
+  color: #AF5F96;
+}
+
+.main-section-contenuto p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: var(--White);
+}
+
+@media (min-width: 426px) {
+  .main {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .main-header-titolo {
+    margin-top: 20px;
+  }
+  .main-header-titolo h1 {
+    font-size: 3rem;
+    text-align: start;
+  }
+  .main-header-titolo p {
+    text-align: start;
+    font-size: 1rem;
+  }
+  .main-sezione {
+    margin-left: 50px;
+    padding: 20px;
+  }
+  .main-sezione-rankings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .main-sezione-rankings-img {
+    margin: auto 0;
+  }
+  .main-sezione-rankings-img img {
+    height: 15px;
+  }
+  .main-sezione-rankings p {
+    margin-left: 10px;
+    font-size: 1.1rem;
+  }
+  .main-sezione #primo {
+    position: relative;
+    right: 5%;
+  }
+  .main-sezione #secondo {
+    position: relative;
+    left: 5%;
+  }
+  .main-sezione #secondo p {
+    margin-right: 20px;
+  }
+  .main-sezione #terzo {
+    position: relative;
+    left: 15%;
+  }
+  .main-sezione #terzo p {
+    margin-right: 20px;
+  }
+  .main-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    margin: 0;
+  }
+  .main-section-contenuto {
+    height: auto;
+    margin-left: 10px;
+  }
+  .main-section-contenuto p {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=estilos1.css.map */
