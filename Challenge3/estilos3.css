@@ -1,0 +1,138 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-inizio {
+  margin: 2rem 1.1rem 4rem;
+}
+
+.main-inizio-titolo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main-inizio-titolo-1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-inizio-titolo-1 p {
+  font-weight: 200;
+  font-size: 2.4rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.main-inizio-titolo-1 h1 {
+  font-size: 2.5rem;
+}
+
+.main-inizio-titolo-descrizione {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.main-inizio-blocco {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.main-inizio-blocco-capsula {
+  padding: 5px 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 9px black;
+          box-shadow: 1px 1px 9px black;
+  margin-bottom: 25px;
+}
+
+.main-inizio-blocco-capsula-n {
+  text-align: start;
+}
+
+.main-inizio-blocco-capsula-n h3 {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+
+.main-inizio-blocco-capsula-n p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.main-inizio-blocco-capsula-img {
+  text-align: end;
+  margin-bottom: 10px;
+}
+
+.main-inizio-blocco-capsula-img img {
+  margin: 5px;
+  width: 50px;
+}
+
+.main-inizio-blocco #supervisor {
+  border-top: 3px solid var(--Cyan);
+}
+
+.main-inizio-blocco #team-builder {
+  border-top: 3px solid var(--Red);
+}
+
+.main-inizio-blocco #karma {
+  border-top: 3px solid var(--Orange);
+}
+
+.main-inizio-blocco #calco {
+  border-top: 3px solid var(--Blue);
+}
+/*# sourceMappingURL=estilos3.css.map */
