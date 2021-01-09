@@ -26,7 +26,6 @@ body {
 
 .main {
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,5 +133,68 @@ body {
 
 .main-inizio-blocco #calco {
   border-top: 3px solid var(--Blue);
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .main-inizio {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-inizio-titolo-1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-inizio-titolo-1 p {
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0;
+  }
+  .main-inizio-titolo-1 h1 {
+    font-size: 3.6rem;
+  }
+  .main-inizio-titolo-descrizione {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+  .main-inizio-blocco {
+    width: 100%;
+    position: relative;
+  }
+  .main-inizio-blocco-capsula {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 9px black;
+            box-shadow: 1px 1px 9px black;
+    margin-bottom: 30px;
+    width: 28%;
+    height: 180px;
+  }
+  .main-inizio-blocco #supervisor {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+  .main-inizio-blocco #team-builder {
+    margin: 0 auto;
+    margin-top: -20px;
+  }
+  .main-inizio-blocco #karma {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+  }
+  .main-inizio-blocco #calco {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
 }
 /*# sourceMappingURL=estilos3.css.map */

@@ -1,0 +1,182 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  background-color: var(--Light-Gray);
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-block-header {
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.main-block-header h1 {
+  font-size: 2.5rem;
+  color: var(--Cyan);
+}
+
+.main-block-header p {
+  font-weight: 700;
+  color: var(--Bright-Yellow);
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.main-block-header span {
+  line-height: 3rem;
+  font-size: 1.55rem;
+  color: var(--Grayish-Blue);
+}
+
+.main-middle {
+  padding: 20px;
+  background-color: var(--Cyan);
+}
+
+.main-middle-monthly {
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.main-middle-monthly h2 {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.main-middle-monthly-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.main-middle-monthly-price h3 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.main-middle-monthly-price span {
+  font-size: 1.5rem;
+  color: var(--Light-Gray);
+}
+
+.main-middle-monthly p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.main-middle-monthly button {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: var(--Bright-Yellow);
+  border: 1px solid rgba(var(--Light-Gray), 2);
+  -webkit-box-shadow: 0px 0px 10px #808080;
+          box-shadow: 0px 0px 10px #808080;
+}
+
+.main-middle-monthly button p {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.main-footer {
+  padding: 20px;
+  background-color: #11cccc;
+}
+
+.main-footer-titolo h3 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #ffffff;
+}
+
+.main-footer-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-footer-list ul li {
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    width: 100%;
+  }
+  .main-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "header header" "middle footer";
+    height: 100vh;
+  }
+  .main-block-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
+    padding: 30px;
+  }
+  .main-block-footer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: footer;
+    padding: 20px;
+  }
+  .main-middle {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: middle;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=estilos4.css.map */

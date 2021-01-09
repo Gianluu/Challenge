@@ -25,7 +25,6 @@ body{
 
 .main{
     width: 100%;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +118,85 @@ body{
 
             #calco {
                 border-top: 3px solid var(--Blue);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        
+    
+        &-inizio{
+                width: 90%;
+                margin: 0 auto;
+
+            &-titolo{
+    
+                &-1{
+                    width: 90%;
+                    margin: 0 auto;
+    
+                    p{
+                        font-weight: 200;
+                        font-size: 3.5rem;
+                        color: var(--Very-Dark-Blue);
+                        margin-bottom: 0;
+                    }
+    
+                    h1{
+                        font-size: 3.6rem;
+                    }
+                    
+                }
+    
+                &-descrizione{
+                    width: 45%;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 1.4rem;
+                    margin-bottom: 3rem;
+                }
+            }
+    
+            &-blocco{
+                width: 100%;
+                position: relative;
+    
+                &-capsula{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 9px black;
+                    margin-bottom: 30px;
+                    width: 28%;
+                    height: 180px;
+                }
+
+                #supervisor{
+                    position: absolute;
+                    top: 25%;
+                    left: 5%;
+                }
+
+                #team-builder{
+                    margin: 0 auto;
+                    margin-top: -20px;
+                }
+
+                #karma{
+                    position: absolute;
+                    top: 25%;
+                    right: 5%;
+                }
+
+                #calco{
+                   margin: 0 auto;
+                   margin-top: 2rem;
+                }
+
             }
         }
     }
